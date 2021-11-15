@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pasolino</title>
+
+	<link rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+		crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/abstract/myCssLibrary.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="main">
+		<!-- Top Header -->
+		<div id="home" class="top_header py-1">
+			<div class="container">
+				<div class="logo">
+					<div class="line"></div>
+					<h2>Pasolino</h2>
+					<h5 class="thin family-secondary text-uppercase">italian restaurant
+					</h5>
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
+		<div class="header">
+			<nav class="main_nav">
+				<ul class="flex gap-3 justify-center my-1">
+					<li><a href="#home" class="text-orange fw-700">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#menu">Menu</a></li>
+					<li><a href="#reservation">Reservation</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+				</ul>
+			</nav>
+
+			<button id="menu_toggler"> <i class="fas fa-bars fa-2x"></i> </button>
+		</div>
+		<!-- Hero -->
+		<section class="hero">
+			<div class="hero_content">
+				<h1 class="thin family-secondary">Welcome to</h1>
+				<h1 class="title text-uppercase my-2">
+					Pasolino Restaurant
+				</h1>
+				<div class="flex gap-2 justify-center">
+					<a href="#reservation" class="btn family-secondary h2">Reservation</a>
+					<a href="#menu" class="btn family-secondary h2">Menu</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section id="about" class="about pt-6">
+			<div class="container">
+				<div class="section_title">
+					<h2>About</h2>
+					<div class="line"></div>
+				</div>
+				<div class="flex gap-2 items-center">
+					<div class="img-container flex-1">
+						<img src="images/img2.jpg" alt="">
+					</div>
+					<div class="about_content flex-1">
+						<p class="thin family-secondary h2 mb-3">“We prepare and serve high
+							quality,
+							simple food, at a great value, in a home-like environment.”</p>
+						<p class="thin h3 line-height-3">As is the way, with
+							our unique philosophy of
+							combining a
+							different atmosphere with our products we have done away with the
+							traditional bar and restaurant experience. The new restaurant is
+							fully equipped in an open kitchen and it is also open to our
+							guests’ children and adults, with the option to bring them with
+							us. We will be open from 7-20 May 2016. From the start, the
+							restaurant was designed to be a relaxed, homely atmosphere.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Food_menu -->
+		<section id="menu" class="food_menu_section pt-6 pb-3">
+			<div class="container">
+				<div class="section_title">
+					<h2>Food menu</h2>
+					<div class="line"></div>
+				</div>
+				<nav class="food_menu_nav">
+					<ul class="flex justify-center">
+						<li><button class="active" data-food-menu-btn="all">All</button>
+						</li>
+						<li><button data-food-menu-btn="desert">Deserts</button></li>
+						<li><button data-food-menu-btn="entre">Entres</button></li>
+						<li><button data-food-menu-btn="appetizer">Apettizers</button></li>
+					</ul>
+				</nav>
+				<div id="food_menu_container" class="mt-3">
+					<!-- <div class="food_item flex justify-between items-center" data-food-category="apettizer">
+						<div class="flex items-center gap-2">
+							<div class="img-container">
+								<img src="images/img2.jpg" alt="">
+							</div>
+							<div>
+								<h3>Eggs</h3>
+								<p>Eggs, oil, salt,paper</p>
+							</div>
+						</div>
+						<strong>$5.63</strong>
+					</div> -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Reservation form -->
+		<section id="reservation" class="reservation py-3 pt-6">
+			<div class="container">
+				<div class="section_title">
+					<h2>Reservation</h2>
+					<div class="line"></div>
+				</div>
+				<form action="#" id="reservation_form" class="reservation_form mt-3">
+					<div class="grid">
+						<div>
+							<label class="d-block" for="name">Name</label>
+							<input type="text" id="name" required>
+						</div>
+
+						<div>
+							<label class="d-block" for="email">Email</label>
+							<input type="email" id="email">
+						</div>
+
+						<div>
+							<label class="d-block" for="phone">Phone</label>
+							<input type="phone" id="Phone" required>
+						</div>
+
+						<div>
+							<label class="d-block" for="date">Date</label>
+							<input type="date" id="date" required>
+						</div>
+
+						<div>
+							<label class="d-block" for="hour">Hour</label>
+							<input type="text" id="hour" required>
+						</div>
+
+						<div>
+							<label class="d-block" for="people">Nr. of people</label>
+							<input type="number" id="people" required>
+						</div>
+
+						<div>
+							<label class="d-block" for="message">Message</label>
+							<textarea id="message" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+
+					<button type="submit" class="btn">Submit</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Gallery -->
+		<section id="gallery" class="gallery pt-6">
+			<div class="section_title">
+				<h2>Gallery</h2>
+				<div class="line"></div>
+			</div>
+
+			<div class="grid mt-3">
+				<div class="gallery_item">
+					<img src="images/gallery1.jpg" alt="">
+				</div>
+				<div class="gallery_item">
+					<img src="images/gallery2.jpg" alt="">
+				</div>
+				<div class="gallery_item">
+					<img src="images/gallery3.jpg" alt="">
+				</div>
+				<div class="gallery_item">
+					<img src="images/gallery4.jpg" alt="">
+				</div>
+				<div class="gallery_item">
+					<img src="images/gallery5.jpg" alt="">
+				</div>
+				<div class="gallery_item">
+					<img src="images/gallery6.jpg" alt="">
+				</div>
+				<div class="gallery_item">
+					<img src="images/gallery7.jpg" alt="">
+				</div>
+				<div class="gallery_item">
+					<img src="images/gallery8.jpg" alt="">
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal gallery -->
+		<div id="modal_gallery" class="modal_gallery">
+			<div class="inner_container">
+				<div class="img_container">
+					<img id="modal_img" src="" alt="">
+				</div>
+
+				<button id="next_btn"> <i class="fas fa-chevron-right"></i> </button>
+				<button id="prev_btn"> <i class="fas fa-chevron-left"></i>
+				</button>
+			</div>
+			<button id="close_gallery"> <i class="fas fa-times"></i> </button>
+		</div>
+
+		<!-- Contact -->
+		<section id="contact" class="contact pt-6 pb-3">
+			<div class="container">
+				<div class="section_title">
+					<h2>Contact</h2>
+					<div class="line"></div>
+				</div>
+				<div class="flex justify-between gap-3">
+					<div class="location_info flex-1">
+						<h3 class="thin family-secondary h1 mb-2">Where to find us</h3>
+						<ul>
+							<li><i class="fas fa-city"></i> City: Bucharest </li>
+							<li><i class="fas fa-globe-asia"></i> Country: Romania</li>
+							<li><i class="fas fa-phone"></i> Phone: 0799 999 999</li>
+							<li> <i class="fas fa-map-marker-alt"></i> Adress: Principal
+								Street No
+								1234 Bucharest</li>
+							<li> <i class="fas fa-clock"></i> Restaurant program: 10 am -
+								11:30 pm</li>
+						</ul>
+					</div>
+
+					<form action="#" class="contact_form flex-3">
+						<div class="grid">
+							<div>
+								<label class="d-block" for="name">Name</label>
+								<input type="text" id="name" required>
+							</div>
+
+							<div>
+								<label class="d-block" for="email">Email</label>
+								<input type="email" id="email">
+							</div>
+
+							<div>
+								<label class="d-block" for="phone">Phone</label>
+								<input type="phone" id="Phone" required>
+							</div>
+
+							<div>
+								<label class="d-block" for="subject">Subject</label>
+								<input type="text" id="subject" required>
+							</div>
+
+							<div>
+								<label class="d-block" for="message">Message</label>
+								<textarea id="message" cols="30" rows="10"></textarea>
+							</div>
+						</div>
+						<button type="submit" class="btn">Send message</button>
+					</form>
+				</div>
+				<div id="map" class="mt-4" style="height: 500px; width: 100%;"></div>
+			</div>
+		</section>
+
+		<!-- Testimonials -->
+		<section id="testimonials" class="testimonials pt-6 pb-6">
+			<div class="container">
+				<div class="section_title">
+					<h2>Testimonials</h2>
+					<div class="line"></div>
+				</div>
+
+				<div class="t_container">
+					<div class="t_outer">
+						<div class="t_inner">
+							<!-- Slide 1 -->
+							<div class="t_slide">
+								<div class="img_container">
+									<img src="images/t1.jpg" alt="">
+								</div>
+								<p class="h3">
+									<i class="fas fa-quote-left"></i>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Suscipit ea expedita fuga cum asperiores soluta odio
+									temporibus quas magnam sit.
+									<i class="fas fa-quote-right"></i>
+								</p>
+								<h3 class="fw-700 my-1">John Doe</h3>
+								<p class="thin italic h4">Client</p>
+							</div>
+							<!-- Slide 2 -->
+							<div class="t_slide">
+								<div class="img_container">
+									<img src="images/t2.jpg" alt="">
+								</div>
+								<p class="h3">
+									<i class="fas fa-quote-left"></i>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Suscipit ea expedita fuga cum asperiores soluta odio
+									temporibus quas magnam sit.
+									<i class="fas fa-quote-right"></i>
+								</p>
+								<h3 class="fw-700 my-1">Carla Robertson</h3>
+								<p class="thin italic h4">Client</p>
+							</div>
+							<!-- Slide 3 -->
+							<div class="t_slide">
+								<div class="img_container">
+									<img src="images/t3.jpg" alt="">
+								</div>
+								<p class="h3">
+									<i class="fas fa-quote-left"></i>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Suscipit ea expedita fuga cum asperiores soluta odio
+									temporibus quas magnam sit.
+									<i class="fas fa-quote-right"></i>
+								</p>
+								<h3 class="fw-700 my-1">Maria Smith</h3>
+								<p class="thin italic h4">Client</p>
+							</div>
+
+							<!-- Slide 1 copy -->
+							<div class="t_slide">
+								<div class="img_container">
+									<img src="images/t1.jpg" alt="">
+								</div>
+								<p class="h3">
+									<i class="fas fa-quote-left"></i>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Suscipit ea expedita fuga cum asperiores soluta odio
+									temporibus quas magnam sit.
+									<i class="fas fa-quote-right"></i>
+								</p>
+								<h3 class="fw-700 my-1">John Doe</h3>
+								<p class="thin italic h4">Client</p>
+							</div>
+
+
+						</div>
+						<div class="t_buttons">
+							<button class="t_button active"></button>
+							<button class="t_button"></button>
+							<button class="t_button"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<strong>Pasolino restaurant</strong>
+			<p>&copy Copiright 2021. All right reserved</p>
+		</footer>
+
+	</div>
+
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu-hVdt-prPHrXNFHLQcKwaFHwUbusITM&callback=initMap">
+		</script>
+	<script>
+		let map;
+
+		function initMap() {
+			map = new google.maps.Map(document.getElementById("map"), {
+				center: { lat: -34.397, lng: 150.644 },
+				zoom: 8,
+			});
+		}
+	</script>
+	<script type="module" src="script.js"></script>
+</body>
+
+</html>
